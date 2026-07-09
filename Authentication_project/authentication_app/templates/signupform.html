@@ -14,5 +14,8 @@
         {{ form.as_p }}
         <button type="submit">Signup</button>
     </form>
+    {% for message in messages %}
+    <small style="color:red;">{{message}}</small>
+    {% endfor %}
 </body>
 </html>
